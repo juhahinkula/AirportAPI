@@ -7,13 +7,13 @@ import jakarta.persistence.Id;
 public class Airport {
   @Id
   private long id;
-  private String type, name, countryCode, region, municipality, gpsCode, iataCode;
+  private String type, name, countryCode, region, municipality, icaoCode, iataCode;
   private Integer elevation;
   private Double lat, lng;
 
   public Airport() {}
 
-  public Airport(long id, String type, String name, String countryCode, String region, String municipality, String gpsCode,
+  public Airport(long id, String type, String name, String countryCode, String region, String municipality, String icaoCode,
       String iataCode, int elevation, double lat, double lng) {
     this.id = id;
     this.type = type;
@@ -21,7 +21,7 @@ public class Airport {
     this.countryCode = countryCode;
     this.region = region;
     this.municipality = municipality;
-    this.gpsCode = gpsCode;
+    this.icaoCode = icaoCode;
     this.iataCode = iataCode;
     this.elevation = elevation;
     this.lat = lat;
@@ -76,12 +76,12 @@ public class Airport {
     this.municipality = municipality;
   }
 
-  public String getGpsCode() {
-    return gpsCode;
+  public String getIcaoCode() {
+    return icaoCode;
   }
 
-  public void setGpsCode(String gpsCode) {
-    this.gpsCode = gpsCode;
+  public void setIcaoCode(String icaoCode) {
+    this.icaoCode = icaoCode;
   }
 
   public String getIataCode() {

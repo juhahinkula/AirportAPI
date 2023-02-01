@@ -68,9 +68,9 @@ public class AirportController {
     return repository.findByIataCode(code);
   }
 
-  @GetMapping("/airports/gps")
-  public Iterable<Airport> getAirportsByGpsCode(@RequestParam String code) {
-    return repository.findByGpsCode(code);
+  @GetMapping("/airports/icao")
+  public Iterable<Airport> getAirportsByIcaoCode(@RequestParam String code) {
+    return repository.findByIcaoCode(code);
   }
 
   @GetMapping("/airports/type")
