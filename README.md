@@ -18,7 +18,7 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
     "countryCode": "CA",
     "region": "CA-ON",
     "municipality": "Toronto",
-    "gpsCode": "CYYZ",
+    "icaoCode": "CYYZ",
     "iataCode": "YYZ",
     "elevation": 569,
     "lat": 43.67720032,
@@ -39,7 +39,7 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
 | countryCode   | Country ISO code |
 | region   | Region |
 | municipality   | Municipality |
-| gpsCode   | ICAO / GPS code |
+| icaoCode   | ICAO code |
 | iataCode   | IATA code |
 | lat   | Latitude |
 | lng   | Longitude |
@@ -105,7 +105,7 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
  ```http://localhost:8080/airports/iata?code=YYZ```
  
  ### Get airports by ICAO code
- ``GET /airports/gps?code={icao_code}``
+ ``GET /airports/icao?code={icao_code}``
  
  Query parameters: 
  ``code`` Airport ICAO code
