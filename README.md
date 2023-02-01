@@ -1,6 +1,6 @@
 # AirportAPI
 <img src="https://github.com/juhahinkula/AirportAPI/blob/main/take-off.png" width="80" height="80">
-REST API to get airport data. Contains >50000 airports and heliports worldwide. You can fetch airports by type, by country, by IATA code etc.
+REST API to get airport data. Contains >50000 airports and heliports worldwide. You can fetch airports by type, by country, by ICAO code etc.
 
 Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep automatically after a period of inactivity. So you might have to wait a while after the first API call.
 
@@ -39,7 +39,7 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
 | countryCode   | Country ISO code |
 | region   | Region |
 | municipality   | Municipality |
-| gpsCode   | GPS code |
+| gpsCode   | ICAO / GPS code |
 | iataCode   | IATA code |
 | lat   | Latitude |
 | lng   | Longitude |
@@ -104,11 +104,11 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
  Example:
  ```http://localhost:8080/airports/iata?code=YYZ```
  
- ### Get airports by GPS code
- ``GET /airports/gps?code={gps_code}``
+ ### Get airports by ICAO code
+ ``GET /airports/gps?code={icao_code}``
  
  Query parameters: 
- ``code`` Airport GPS code
+ ``code`` Airport ICAO code
  
  Example:
  ```http://localhost:8080/airports/gps?code=CYYZ```
