@@ -125,5 +125,32 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
  React component to fetch airports from USA
  
  ```
- 
+     function AirportApi() {
+        const [airports, setAirports] = React.useState([]);
+
+        React.useEffect(() => {
+          fetch('https://airportsapi.herokuapp.com/airports')
+          .then(response => response.json())
+          .then(data => setAirports(data.airports))
+          .catch(err => console.error(err))
+        }, []);
+        
+        return(
+          <React.Fragment>
+            <h1>US Airports</h1>
+            <table>
+              <tbody>
+                {
+                  airports.map(airport => 
+                    <tr key={airport.id}>
+                      <td>{airport.name}</td>
+                      <td>{airport.municipality}</td>
+                      <td>{airport.icaoCode}</td>
+                    </tr>)
+                }
+              </tbody>
+            </table>
+          </React.Fragment>
+        );
+      }
  ```
