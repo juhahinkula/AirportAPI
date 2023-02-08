@@ -122,7 +122,7 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
  
  ### React
  
- React component to fetch airports from USA
+ React component to fetch airports (1. page)
  
  ```
      function AirportApi() {
