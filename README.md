@@ -113,4 +113,10 @@ Note! Currently, the service is running in Heroku eco dyno. Eco dynos sleep auto
  Example:
  ```http://localhost:8080/airports/gps?code=CYYZ```
  
+ ## Usage examples
+ 
+ ### cURL
+ ```
+ curl https://airportsapi.herokuapp.com/airports
+ ```
  
