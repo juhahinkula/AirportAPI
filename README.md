@@ -1,5 +1,6 @@
 # AirportAPI
 <img src="https://github.com/juhahinkula/AirportAPI/blob/main/take-off.png" width="80" height="80">
+
 - REST API to get airport data. Contains >50000 airports and heliports worldwide. You can fetch airports by type, by country, by ICAO code etc.
 - **Note!** Currently, the service is running in Heroku eco dyno. Eco dynos sleep automatically after a period of inactivity. So you might have to wait a while after the first API call.
 
