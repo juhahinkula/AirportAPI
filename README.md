@@ -36,7 +36,7 @@
 | id     | Airport id       |
 | type   | Type (small, medium, large, closed or heliport) |
 | name     | Airport name       |
-| countryCode   | Country ISO code |
+| countryCode   | Country ISO code (ISO 3166-1 alpha-2) |
 | region   | Region |
 | municipality   | Municipality |
 | icaoCode   | ICAO code |
