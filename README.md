@@ -7,6 +7,8 @@
 ## HTTP Request
  ``GET https://airportsapi.herokuapp.com/airports``
  
+ No authentication required.
+ 
  ## Sample response
 
  ```
