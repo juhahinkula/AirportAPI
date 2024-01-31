@@ -86,7 +86,7 @@
  ``name`` Name of an airport or heliport
  
  Example:
- ```https://airportsapi.herokuapp.com/airports/type?name=Stockholm-Arlanda Airport```
+ ```https://airportsapi.herokuapp.com/airports?name=Stockholm-Arlanda Airport```
  
  ### Get airports by country
  ``GET /airports/country?code={country_code}``
