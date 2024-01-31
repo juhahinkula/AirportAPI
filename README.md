@@ -68,7 +68,7 @@
  ``id`` Airport id
  
  Example:
- ```http://localhost:8080/airports/id?id=1```
+ ```https://airportsapi.herokuapp.com/airports/id?id=1```
  
  ### Get airports by type
  ``GET /airports/type?type={airport_type}``
