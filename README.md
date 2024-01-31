@@ -113,7 +113,7 @@
  ``code`` Airport ICAO code
  
  Example:
- ```https://airportsapi.herokuapp.com/airports/gps?code=CYYZ```
+ ```https://airportsapi.herokuapp.com/airports/icao?code=CYYZ```
  
  ## Usage examples
  
