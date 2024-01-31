@@ -77,7 +77,7 @@
  ``type`` small, medium, large, heliport or closed
  
  Example:
- ```http://localhost:8080/airports/type?type=small```
+ ```https://airportsapi.herokuapp.com/airports/type?type=small```
  
  ### Get airports by name
  ``GET /airports/name?name={airport_name}``
@@ -86,7 +86,7 @@
  ``name`` Name of an airport or heliport
  
  Example:
- ```http://localhost:8080/airports/type?name=Stockholm-Arlanda Airport```
+ ```https://airportsapi.herokuapp.com/airports/type?name=Stockholm-Arlanda Airport```
  
  ### Get airports by country
  ``GET /airports/country?code={country_code}``
@@ -95,7 +95,7 @@
  ``code`` Country ISO code
  
  Example:
- ```http://localhost:8080/airports/country?code=US```
+ ```https://airportsapi.herokuapp.com/airports/country?code=US```
  
  ### Get airports by IATA code
  ``GET /airports/iata?code={iata_code}``
@@ -104,7 +104,7 @@
  ``code`` Airport IATA code
  
  Example:
- ```http://localhost:8080/airports/iata?code=YYZ```
+ ```https://airportsapi.herokuapp.com/airports/iata?code=YYZ```
  
  ### Get airports by ICAO code
  ``GET /airports/icao?code={icao_code}``
@@ -113,7 +113,7 @@
  ``code`` Airport ICAO code
  
  Example:
- ```http://localhost:8080/airports/gps?code=CYYZ```
+ ```https://airportsapi.herokuapp.com/airports/gps?code=CYYZ```
  
  ## Usage examples
  
