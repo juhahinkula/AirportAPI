@@ -59,7 +59,7 @@
  ``size`` Page size
 
  Example:
- ```http://localhost:8080/airports?page=1&size=1000```
+ ```https://airportsapi.herokuapp.com/airports?page=1&size=1000```
  
  ### Get airports by id
  ``GET /airports/id?id={airport_id}``
